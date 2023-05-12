@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/free-photo/clapperboard-popcorn-film-stripe-cinema-tickets-wooden-desk_23-2148188189.jpg?w=2000&t=st=1683814131~exp=1683814731~hmac=da7ae9d027c00d41161839cf62d992b6602646264bc8a0e2f02e496b66df22a1);">
+  <div class="container">
+    <h1><strong>Movie list</strong></h1>
+    <p>In case you couldn’t tell, we love movies. Heck, who doesn’t?</p>
+    <%= link_to 'Create list', new_list_path, class: 'btn btn-primary btn-sm' %>
+  </div>
+</div>
+
+<div class="container">
+  <% @lists.each do |list| %>
+    <div class="card-category mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://source.unsplash.com/featured/?<%= list.name.downcase %>&<%= rand(1000) %>)">
+      <%= list.name %>
+  <%= link_to "", list_path(list), class: "card-link"  %>
+    </div>
+  <% end %>
+</div>
+  <%# link_to list.name, list_path(list) %>
