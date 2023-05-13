@@ -1,11 +1,11 @@
 <div
-  class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top"
+  class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top p-0"
   data-controller="navbar"
   data-action="scroll@window->navbar#updateNavbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-</a>
+      <img src="https://static.vecteezy.com/system/resources/previews/006/294/559/original/film-logo-number-4-movie-logo-design-template-element-eps10-vector.jpg" />
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,9 +13,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+              <%= link_to root_path, class: 'btn btn-secondary' do %>
+              <i class="fa-solid fa-house" style="color: #f0f5ff;"></i>
+              <% end %>
           </li>
-          <li class="nav-item">
+          <%# <li class="nav-item">
             <a class="nav-link" href="#">Messages</a>
           </li>
           <li class="nav-item dropdown">
@@ -27,7 +29,7 @@
             </div>
           </li>
           <!--li class="nav-item"-->
-          <!--/li-->
+          <!--/li--> %>
       </ul>
     </div>
   </div>
