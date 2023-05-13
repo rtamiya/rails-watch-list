@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : 'https://res.cloudinary.com/dfv1szuzs/image/upload/v1683862534/cld-sample-5.jpg' %>)">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : 'https://res.cloudinary.com/dfv1szuzs/image/upload/v1683992337/photo-1493804714600-6edb1cd93080_dgq4c3.jpg' %>)">
   <div class="container">
     <h1><strong><%= @list.name %></strong></h1>
     <%= link_to 'add movie', new_list_bookmark_path(@list), 'class' => 'btn btn-primary mt-3' %>
